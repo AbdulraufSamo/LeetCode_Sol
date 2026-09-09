@@ -36,15 +36,15 @@ public class Solution {
             // if(slow == null || fast == null)
             //     return false;
 
-            if(slow == fast)
+            if(slow == fast )
                 return true; 
 
-            if(slow.next == null)
+            if(slow.next == null || fast.next == null)
                 return false;
 
-            if(fast.next == null){
-                return false;
-            }
+            // if(){
+                // return false;
+            // }
 
 
             slow = slow.next;
