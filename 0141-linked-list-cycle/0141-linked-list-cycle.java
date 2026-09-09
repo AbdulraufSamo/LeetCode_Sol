@@ -38,19 +38,15 @@ public class Solution {
 
             if(slow == fast )
                 return true; 
-
-            if(slow.next == null || fast.next == null)
+            if( fast.next == null)
                 return false;
 
             // if(){
                 // return false;
             // }
-
-
             slow = slow.next;
             fast = fast.next.next;
         }
-
         return false;
 
     }
